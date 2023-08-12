@@ -6,28 +6,17 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Row(
+    return 
+       Row(
         children: [
          Text('Notes',style: TextStyle(
     fontSize: 28
           ),),
           Spacer(),
           CustomSearchIcon(),
-          NoteItem()
+          
         ],
-      ),
-    );
-  }
-}
-class NoteItem extends StatelessWidget {
-  const NoteItem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(),
+    
     );
   }
 }
